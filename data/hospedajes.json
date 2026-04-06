@@ -1,0 +1,2176 @@
+{
+  "hospedajes": [
+    {
+      "id": 1,
+      "nombre": "Aris Alojamiento",
+      "direccion": "Colon #34",
+      "localidad": "Sierra Gorda",
+      "rut": "76459458-9",
+      "encargado": "Ronald Castro Vega",
+      "telefono": "+56962447427",
+      "email": "ronald.castro@alojamientosierragorda.cl",
+      "habitaciones": {
+        "simples_privado": 6,
+        "simples_compartido": 0,
+        "dobles_privado": 3,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 9
+      },
+      "camas_instaladas": 12,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 2,
+      "nombre": "Campamento Melipal",
+      "direccion": "Colon #50",
+      "localidad": "Sierra Gorda",
+      "rut": "99542240-9",
+      "encargado": "Jalil Biaggini A.",
+      "telefono": "+564990791729",
+      "email": "campamento@tcgroup.cl",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 40,
+        "dobles_compartido": 117,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 157
+      },
+      "camas_instaladas": 314,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 4,
+      "nombre": "Casa Alberto Briones",
+      "direccion": "Santa Maria #100",
+      "localidad": "Sierra Gorda",
+      "rut": "15274150-2",
+      "encargado": "Alberto Briones",
+      "telefono": "+56983589817",
+      "email": "alberto.briones1010@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 3,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 3
+      },
+      "camas_instaladas": 3,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 6,
+      "nombre": "Hospedaje Maricela",
+      "direccion": "Av Salvador Allende  #403",
+      "localidad": "Sierra Gorda",
+      "rut": "76626247-3",
+      "encargado": "Kassandra Godoy L.",
+      "telefono": "+56931275780",
+      "email": "kassandragodoy17@gmail.com",
+      "habitaciones": {
+        "simples_privado": 1,
+        "simples_compartido": 0,
+        "dobles_privado": 4,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 5
+      },
+      "camas_instaladas": 9,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 9,
+      "nombre": "Casa Hospedaje Eduardo Salas",
+      "direccion": "Santa Maria #32",
+      "localidad": "Sierra Gorda",
+      "rut": "76774023-9",
+      "encargado": "Zulma Melendres F.",
+      "telefono": "+56954745603",
+      "email": "zmelendresf@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 6,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 6
+      },
+      "camas_instaladas": 12,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 10,
+      "nombre": "Hospedaje Vifredes",
+      "direccion": "Eduardo Frei #509",
+      "localidad": "Sierra Gorda",
+      "rut": "12595596-7",
+      "encargado": "Violeta Fredes D.",
+      "telefono": "+56954069499",
+      "email": "violetafredes.vf@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 1,
+        "dobles_privado": 0,
+        "dobles_compartido": 4,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 5
+      },
+      "camas_instaladas": 9,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 11,
+      "nombre": "Hospedaje A:A:C",
+      "direccion": "Jaime Guzman #29",
+      "localidad": "Sierra Gorda",
+      "rut": "77964947-4",
+      "encargado": "Aracely Apeña",
+      "telefono": "+56962111373",
+      "email": "hospedaje.propiedades@gmail.com",
+      "habitaciones": {
+        "simples_privado": 2,
+        "simples_compartido": 3,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 5
+      },
+      "camas_instaladas": 5,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 13,
+      "nombre": "Hospedaje Rayencura",
+      "direccion": "Av. Salvador Allende #111",
+      "localidad": "Sierra Gorda",
+      "rut": "76052235-k",
+      "encargado": "William Poblete",
+      "telefono": "+56939002516",
+      "email": "w.poblete@rayancura.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 3,
+        "dobles_privado": 9,
+        "dobles_compartido": 9,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 21
+      },
+      "camas_instaladas": 39,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 14,
+      "nombre": "Hospedaje Casa Besalco 2",
+      "direccion": "Jose Santos Ossa #107",
+      "localidad": "Sierra Gorda",
+      "rut": "96727830-0",
+      "encargado": "Anelis Gallegos",
+      "telefono": "+56942218987",
+      "email": "anelis.gallegos@besalco.cl",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 14,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 14
+      },
+      "camas_instaladas": 14,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 15,
+      "nombre": "Hospedaje Casa Besalco 3",
+      "direccion": "Jose Santos Ossa #223",
+      "localidad": "Sierra Gorda",
+      "rut": "96727830-0",
+      "encargado": "Anelis Gallegos",
+      "telefono": "+56942218987",
+      "email": "anelis.gallegos@besalco.cl",
+      "habitaciones": {
+        "simples_privado": 1,
+        "simples_compartido": 0,
+        "dobles_privado": 7,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 8
+      },
+      "camas_instaladas": 15,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 16,
+      "nombre": "Hospedaje Casa Besalco 4 (azul)",
+      "direccion": "Diego Portales #101",
+      "localidad": "Sierra Gorda",
+      "rut": "96727830-0",
+      "encargado": "Anelis Gallegos",
+      "telefono": "+56942218987",
+      "email": "anelis.gallegos@besalco.cl",
+      "habitaciones": {
+        "simples_privado": 9,
+        "simples_compartido": 0,
+        "dobles_privado": 1,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 10
+      },
+      "camas_instaladas": 11,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 17,
+      "nombre": "Hospedaje Ines",
+      "direccion": "Diego Portales #108",
+      "localidad": "Sierra Gorda",
+      "rut": "8292502-3",
+      "encargado": "Doris Martínez Perira",
+      "telefono": "+56995492069",
+      "email": "hospedajeines.sg@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 5,
+        "dobles_privado": 8,
+        "dobles_compartido": 10,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 23
+      },
+      "camas_instaladas": 41,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 19,
+      "nombre": "Hospedaje Jimenez",
+      "direccion": "Eduardo Frei #109",
+      "localidad": "Sierra Gorda",
+      "rut": "17734765-5",
+      "encargado": "María José Jiménez",
+      "telefono": "+56963526244",
+      "email": "mjimenezv10@gmail.com",
+      "habitaciones": {
+        "simples_privado": 24,
+        "simples_compartido": 12,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 36
+      },
+      "camas_instaladas": 36,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 20,
+      "nombre": "Hospedaje Fera",
+      "direccion": "Diaz Gana #225",
+      "localidad": "Sierra Gorda",
+      "rut": "77570568-k",
+      "encargado": "Nancy Echeverria",
+      "telefono": "+56975792514",
+      "email": "ferahostal.sg@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 1,
+        "dobles_compartido": 4,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 5
+      },
+      "camas_instaladas": 10,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 21,
+      "nombre": "Hospedaje Laboral 1",
+      "direccion": "Diego Portales #102",
+      "localidad": "Sierra Gorda",
+      "rut": "78158165-8",
+      "encargado": "Armando Chipana",
+      "telefono": "+56936168982",
+      "email": "archiemal@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 5,
+        "dobles_compartido": 5,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 10
+      },
+      "camas_instaladas": 20,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 22,
+      "nombre": "Hospedaje Laboral 2",
+      "direccion": "Diego portales #103",
+      "localidad": "Sierra Gorda",
+      "rut": "14576115-8",
+      "encargado": "Armando Chipana",
+      "telefono": "+56936168982",
+      "email": "archiemal@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 10,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 10
+      },
+      "camas_instaladas": 20,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 23,
+      "nombre": "Hospedaje Marfeli",
+      "direccion": "Jose Santos Ossa #104",
+      "localidad": "Sierra Gorda",
+      "rut": "77208455-2",
+      "encargado": "Kassandra Godoy L.",
+      "telefono": "+56931275780",
+      "email": "kassandragodoy17@gmail.com",
+      "habitaciones": {
+        "simples_privado": 12,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 12
+      },
+      "camas_instaladas": 12,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 25,
+      "nombre": "Hospedaje Rosenda",
+      "direccion": "Av. Salvador Allende #101",
+      "localidad": "Sierra Gorda",
+      "rut": "77580375-4",
+      "encargado": "José Trigo A.",
+      "telefono": "+56958299564",
+      "email": "jtrigo_@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 1,
+        "dobles_compartido": 2,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 3
+      },
+      "camas_instaladas": 6,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 27,
+      "nombre": "Hospedaje Yaritza",
+      "direccion": "Diego Portales #220",
+      "localidad": "Sierra Gorda",
+      "rut": "14475418-2",
+      "encargado": "Erika Trigo A.",
+      "telefono": "+56931997608",
+      "email": "erikatrigo2502@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 1,
+        "dobles_privado": 0,
+        "dobles_compartido": 2,
+        "triples_privado": 0,
+        "triples_compartido": 1,
+        "total": 4
+      },
+      "camas_instaladas": 8,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 29,
+      "nombre": "Hospedajes Jose Trigo",
+      "direccion": "Jose Santos Ossa #201",
+      "localidad": "Sierra Gorda",
+      "rut": "77580375-4",
+      "encargado": "Jose Trigo A.",
+      "telefono": "+56958299564",
+      "email": "jtrigo_@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 3,
+        "dobles_privado": 2,
+        "dobles_compartido": 1,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 6
+      },
+      "camas_instaladas": 9,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 32,
+      "nombre": "Hostal HAI 1",
+      "direccion": "Prat #611",
+      "localidad": "Sierra Gorda",
+      "rut": "76556166-3",
+      "encargado": "Sergio Aldunate",
+      "telefono": "+56977996590",
+      "email": "saldunate@alojamientoindustrial.cl",
+      "habitaciones": {
+        "simples_privado": 9,
+        "simples_compartido": 0,
+        "dobles_privado": 4,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 13
+      },
+      "camas_instaladas": 17,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 33,
+      "nombre": "Hostal HAI 2",
+      "direccion": "Santa Maria #30",
+      "localidad": "Sierra Gorda",
+      "rut": "76556166-3",
+      "encargado": "Sergio Aldunate",
+      "telefono": "+56977996590",
+      "email": "saldunate@alojamientoindustrial.cl",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 18,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 18
+      },
+      "camas_instaladas": 36,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 34,
+      "nombre": "Hostal HAI 3",
+      "direccion": "Colon #38",
+      "localidad": "Sierra Gorda",
+      "rut": "76556166-3",
+      "encargado": "Sergio Aldunate",
+      "telefono": "+56977996590",
+      "email": "saldunate@alojamientoindustrial.cl",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 18,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 18
+      },
+      "camas_instaladas": 36,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 35,
+      "nombre": "Hostal Aris 2",
+      "direccion": "Jose Santos Ossa  #115",
+      "localidad": "Sierra Gorda",
+      "rut": "76459458-9",
+      "encargado": "Ronald Castro Vega",
+      "telefono": "+56962447427",
+      "email": "ronald.castro@alojamientosierragorda.cl",
+      "habitaciones": {
+        "simples_privado": 2,
+        "simples_compartido": 0,
+        "dobles_privado": 8,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 10
+      },
+      "camas_instaladas": 18,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 37,
+      "nombre": "Hostal Minero 1",
+      "direccion": "Av. Salvador Allende #108",
+      "localidad": "Sierra Gorda",
+      "rut": "4570211-1",
+      "encargado": "Super: Marcia Marquez",
+      "telefono": "+56990181261",
+      "email": "marciacmarquez@gmail.com",
+      "habitaciones": {
+        "simples_privado": 7,
+        "simples_compartido": 20,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 27
+      },
+      "camas_instaladas": 27,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 38,
+      "nombre": "Hostal Minero 2",
+      "direccion": "Jose Santos Ossa #101",
+      "localidad": "Sierra Gorda",
+      "rut": "4570211-1",
+      "encargado": "Super:Marcia Marquez",
+      "telefono": "+56990181261",
+      "email": "marciacmarquez@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 22,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 22
+      },
+      "camas_instaladas": 22,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 39,
+      "nombre": "Hostal Minero 3",
+      "direccion": "Diego Portales #224",
+      "localidad": "Sierra Gorda",
+      "rut": "4570211-1",
+      "encargado": "Super:Marcia Marquez",
+      "telefono": "+56990181261",
+      "email": "marciacmarquez@gmail.com",
+      "habitaciones": {
+        "simples_privado": 19,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 19
+      },
+      "camas_instaladas": 19,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 40,
+      "nombre": "Hostal Minero 4",
+      "direccion": "Diego Portales #232",
+      "localidad": "Sierra Gorda",
+      "rut": "4570211-1",
+      "encargado": "Super: Maragarita Labarca",
+      "telefono": "+56990181261",
+      "email": "marciacmarquez@gmail.com",
+      "habitaciones": {
+        "simples_privado": 20,
+        "simples_compartido": 9,
+        "dobles_privado": 0,
+        "dobles_compartido": 1,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 30
+      },
+      "camas_instaladas": 31,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 41,
+      "nombre": "Hostal Minero 5",
+      "direccion": "Jaime Guzman #33",
+      "localidad": "Sierra Gorda",
+      "rut": "4570211-1",
+      "encargado": "Super: Maragarita Labarca",
+      "telefono": "+56990181261",
+      "email": "marciacmarquez@gmail.com",
+      "habitaciones": {
+        "simples_privado": 10,
+        "simples_compartido": 9,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 19
+      },
+      "camas_instaladas": 19,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 47,
+      "nombre": "Hostal Talinay 1",
+      "direccion": "Av. Salvador Allende #511",
+      "localidad": "Sierra Gorda",
+      "rut": "76030040-3",
+      "encargado": "Marcela Michea",
+      "telefono": "+56934498720",
+      "email": "mlml_2012@me.com",
+      "habitaciones": {
+        "simples_privado": 18,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 18
+      },
+      "camas_instaladas": 18,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 49,
+      "nombre": "Hostal Tronar",
+      "direccion": "Jose Santos Ossa #233",
+      "localidad": "Sierra Gorda",
+      "rut": "77964250-K",
+      "encargado": "Ingrid Guerrero",
+      "telefono": "+56983951354",
+      "email": "iguerrero.tronarltda@gmail.com",
+      "habitaciones": {
+        "simples_privado": 28,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 28
+      },
+      "camas_instaladas": 28,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 50,
+      "nombre": "Hostal Tronar 2",
+      "direccion": "Colon #32",
+      "localidad": "Sierra Gorda",
+      "rut": "77964250-K",
+      "encargado": "Ingrid Guerrero",
+      "telefono": "+56983951354",
+      "email": "iguerrero.tronarltda@gmail.com",
+      "habitaciones": {
+        "simples_privado": 8,
+        "simples_compartido": 0,
+        "dobles_privado": 10,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 18
+      },
+      "camas_instaladas": 28,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 52,
+      "nombre": "Hostal d´Nano",
+      "direccion": "Eduardo Freí  # 503",
+      "localidad": "Sierra Gorda",
+      "rut": "76921365-1",
+      "encargado": "Cintia Loaisa",
+      "telefono": "+56999948739",
+      "email": "hostal.dnano@gmail.com",
+      "habitaciones": {
+        "simples_privado": 2,
+        "simples_compartido": 0,
+        "dobles_privado": 22,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 24
+      },
+      "camas_instaladas": 46,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 55,
+      "nombre": "- Hospedaje A: A: C",
+      "direccion": "2 - Eduardo Frei #107",
+      "localidad": "Sierra Gorda",
+      "rut": "77964947-4",
+      "encargado": "Aracely Apeña",
+      "telefono": "+56962111373",
+      "email": "hospedaje.propiedades@gmail.com",
+      "habitaciones": {
+        "simples_privado": 8,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 6,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 14
+      },
+      "camas_instaladas": 20,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 56,
+      "nombre": "- Hospedaje Victoria",
+      "direccion": "Diego Portales #208",
+      "localidad": "Sierra Gorda",
+      "rut": "23615454-8",
+      "encargado": "Celia taquichiri",
+      "telefono": "+56952132011",
+      "email": "taquichiricelia1960@gmail.com",
+      "habitaciones": {
+        "simples_privado": 7,
+        "simples_compartido": 0,
+        "dobles_privado": 3,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 10
+      },
+      "camas_instaladas": 13,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 57,
+      "nombre": "- Hostal Tronar 3",
+      "direccion": "José Diaz Gana #221",
+      "localidad": "Sierra Gorda",
+      "rut": "77964250-K",
+      "encargado": "Ingrid Guerrero",
+      "telefono": "+56983951354",
+      "email": "iguerrero.tronarltda@gmail.com",
+      "habitaciones": {
+        "simples_privado": 15,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 15
+      },
+      "camas_instaladas": 15,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 58,
+      "nombre": "- Hostal AAC 3",
+      "direccion": "Prat # 609",
+      "localidad": "Sierra Gorda",
+      "rut": "77964947-4",
+      "encargado": "Aracely Apeña",
+      "telefono": "+56962111373",
+      "email": "hospedaje.propiedades@gmail.com",
+      "habitaciones": {
+        "simples_privado": 3,
+        "simples_compartido": 0,
+        "dobles_privado": 1,
+        "dobles_compartido": 5,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 9
+      },
+      "camas_instaladas": 15,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 59,
+      "nombre": "- Servicios Integrales E&A SPA",
+      "direccion": "Diego Portales # 206",
+      "localidad": "Sierra Gorda",
+      "rut": "77374361-k",
+      "encargado": "Ana Zurita",
+      "telefono": "+56984436529",
+      "email": "servicosturasana@gmail.com",
+      "habitaciones": {
+        "simples_privado": 6,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 6
+      },
+      "camas_instaladas": 6,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 0,
+      "nombre": "60.- Casa Solenis",
+      "direccion": "",
+      "localidad": "Sierra Gorda",
+      "rut": "77268187-9",
+      "encargado": "Osvaldo Portilla Muñoz",
+      "telefono": "+56998727531",
+      "email": "osvaldo.portilla@serviciosylogistica.cl",
+      "habitaciones": {
+        "simples_privado": 2,
+        "simples_compartido": 1,
+        "dobles_privado": 0,
+        "dobles_compartido": 6,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 9
+      },
+      "camas_instaladas": 15,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 63,
+      "nombre": "- Hostal Rolui SpA",
+      "direccion": "José Santos Ossa # 238",
+      "localidad": "Sierra Gorda",
+      "rut": "77635777-4",
+      "encargado": "Reyna Ccama Condori.",
+      "telefono": "+56975448475",
+      "email": "reynaccama@gmail.com",
+      "habitaciones": {
+        "simples_privado": 10,
+        "simples_compartido": 0,
+        "dobles_privado": 2,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 12
+      },
+      "camas_instaladas": 14,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 0,
+      "nombre": "64.- Casa hospedaje Virgen del Carmen José Dias Gana #237",
+      "direccion": "",
+      "localidad": "Sierra Gorda",
+      "rut": "21754068-2",
+      "encargado": "Peggbeth Rodríguez",
+      "telefono": "+56990808857",
+      "email": "rodriguezpegrup@gmail.com",
+      "habitaciones": {
+        "simples_privado": 12,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 12
+      },
+      "camas_instaladas": 12,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 0,
+      "nombre": "65.- Hospedaje Laboral 3 (Santa Maria 106)",
+      "direccion": "",
+      "localidad": "Sierra Gorda",
+      "rut": "22895594-9",
+      "encargado": "Armando Chipana",
+      "telefono": "+56936168982",
+      "email": "archiemal@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 9,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 9
+      },
+      "camas_instaladas": 18,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 0,
+      "nombre": "66.- Hospedaje Helifos Casa Blanca (Eduardo Frei # 518)",
+      "direccion": "",
+      "localidad": "Sierra Gorda",
+      "rut": "77942891-5",
+      "encargado": "Cristian Silva",
+      "telefono": "+56963681568",
+      "email": "helifospa@gmail.com",
+      "habitaciones": {
+        "simples_privado": 3,
+        "simples_compartido": 0,
+        "dobles_privado": 21,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 24
+      },
+      "camas_instaladas": 45,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 68,
+      "nombre": "hospedaje Tronar 4",
+      "direccion": "Jose Santos Ossa #219",
+      "localidad": "Sierra Gorda",
+      "rut": "77964250-K",
+      "encargado": "Ingrid Guerrero",
+      "telefono": "+56983951354",
+      "email": "iguerrero.tronarltda@gmail.com",
+      "habitaciones": {
+        "simples_privado": 2,
+        "simples_compartido": 0,
+        "dobles_privado": 14,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 16
+      },
+      "camas_instaladas": 30,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 0,
+      "nombre": "69- Hostal San Juan - Santa Maria #16",
+      "direccion": "",
+      "localidad": "Sierra Gorda",
+      "rut": "78061313-0",
+      "encargado": "Medali",
+      "telefono": "+56976043482",
+      "email": "jm.mi.cm.28@gmail.com",
+      "habitaciones": {
+        "simples_privado": 16,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 16
+      },
+      "camas_instaladas": 16,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 70,
+      "nombre": "Hospedaje La Previa",
+      "direccion": "José Santos Ossa 210",
+      "localidad": "Sierra Gorda",
+      "rut": "78015094-7",
+      "encargado": "Katherine Lillo",
+      "telefono": "+56954451582",
+      "email": "kathalillocarvajal@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 0,
+        "dobles_privado": 12,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 12
+      },
+      "camas_instaladas": 24,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 0,
+      "nombre": "71.- Hospedaje Cistanthe, José Díaz Gana # 202",
+      "direccion": "",
+      "localidad": "Sierra Gorda",
+      "rut": "77639681-8",
+      "encargado": "Jessica Lazo",
+      "telefono": "+56952270509",
+      "email": "cistanthe.sierragorda@gmail.com",
+      "habitaciones": {
+        "simples_privado": 6,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 6
+      },
+      "camas_instaladas": 6,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 0,
+      "nombre": "72.- Hospedaje Isaleen, Diaz Gana 235",
+      "direccion": "",
+      "localidad": "Sierra Gorda",
+      "rut": "77990023-1",
+      "encargado": "Kassandra Godoy",
+      "telefono": "+56931275780",
+      "email": "kassandragodoy17@gmail.com",
+      "habitaciones": {
+        "simples_privado": 8,
+        "simples_compartido": 0,
+        "dobles_privado": 3,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 11
+      },
+      "camas_instaladas": 14,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 73,
+      "nombre": "- Hospedaje C19",
+      "direccion": "Jose Diaz Gana 231",
+      "localidad": "Sierra Gorda",
+      "rut": "77453082-7",
+      "encargado": "Reyna Ccama Condori.",
+      "telefono": "+56975448475",
+      "email": "comercial19.spa@gmail.com",
+      "habitaciones": {
+        "simples_privado": 16,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 16
+      },
+      "camas_instaladas": 16,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 74,
+      "nombre": "- Hospedaje Tronar 5",
+      "direccion": "Jaime Guzmán # 101",
+      "localidad": "Sierra Gorda",
+      "rut": "77964250-K",
+      "encargado": "Ingrid Guerrero",
+      "telefono": "+56983951354",
+      "email": "iguerrero.tronarltda@gmail.com",
+      "habitaciones": {
+        "simples_privado": 10,
+        "simples_compartido": 0,
+        "dobles_privado": 5,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 15
+      },
+      "camas_instaladas": 20,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 75,
+      "nombre": "- Hospedaje Faenas Mineras",
+      "direccion": "José Santos Ossa #207",
+      "localidad": "Sierra Gorda",
+      "rut": "12202046-0",
+      "encargado": "Sandra Vargas A",
+      "telefono": "+56951993431",
+      "email": "sandravaguilar.72@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 2,
+        "dobles_privado": 0,
+        "dobles_compartido": 3,
+        "triples_privado": 0,
+        "triples_compartido": 4,
+        "total": 9
+      },
+      "camas_instaladas": 20,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 76,
+      "nombre": "- Hospedaje Viofredes 2",
+      "direccion": "José Santos Ossa # 100",
+      "localidad": "Sierra Gorda",
+      "rut": "12595596-7",
+      "encargado": "Violeta Fredes D.",
+      "telefono": "+56954069499",
+      "email": "violetafredes.vf@gmail.com",
+      "habitaciones": {
+        "simples_privado": 0,
+        "simples_compartido": 1,
+        "dobles_privado": 1,
+        "dobles_compartido": 3,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 5
+      },
+      "camas_instaladas": 9,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 78,
+      "nombre": "- La Previa 2",
+      "direccion": "José Santos Ossa #216",
+      "localidad": "Sierra Gorda",
+      "rut": "78015094-7",
+      "encargado": "Katherine Lillo",
+      "telefono": "+56954451582",
+      "email": "kathalillocarvajal@gmail.com",
+      "habitaciones": {
+        "simples_privado": 1,
+        "simples_compartido": 0,
+        "dobles_privado": 14,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 15
+      },
+      "camas_instaladas": 29,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 80,
+      "nombre": "- Hospedaje Calicanto",
+      "direccion": "Diaz Gana 239",
+      "localidad": "Sierra Gorda",
+      "rut": "78189010-7",
+      "encargado": "Erika Baptista Romero",
+      "telefono": "+56942489641",
+      "email": "baptistaerika2@gmail.com",
+      "habitaciones": {
+        "simples_privado": 9,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 1,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 10
+      },
+      "camas_instaladas": 11,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 81,
+      "nombre": "- Cistasthe 2",
+      "direccion": "Eduardo Frei 304",
+      "localidad": "Sierra Gorda",
+      "rut": "77639681-8",
+      "encargado": "Jessica Lazo",
+      "telefono": "+56952270509",
+      "email": "cistanthe.sierragorda@gmail.com",
+      "habitaciones": {
+        "simples_privado": 6,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 6
+      },
+      "camas_instaladas": 6,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 82,
+      "nombre": "- Hospedaje Jormar",
+      "direccion": "Caracoles # 30",
+      "localidad": "Sierra Gorda",
+      "rut": "77842719-2",
+      "encargado": "Marcos Aguirre",
+      "telefono": "+56940103001",
+      "email": "jormarehijos@gmail.com",
+      "habitaciones": {
+        "simples_privado": 16,
+        "simples_compartido": 0,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 16
+      },
+      "camas_instaladas": 16,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    },
+    {
+      "id": 84,
+      "nombre": "Hospedaje Casa Besalco 1",
+      "direccion": "Avda Salvador Allende 109",
+      "localidad": "Sierra Gorda",
+      "rut": "96727830-0",
+      "encargado": "Anelis Gallegos",
+      "telefono": "+56942218987",
+      "email": "anelis.gallegos@besalco.cl",
+      "habitaciones": {
+        "simples_privado": 1,
+        "simples_compartido": 6,
+        "dobles_privado": 0,
+        "dobles_compartido": 0,
+        "triples_privado": 0,
+        "triples_compartido": 0,
+        "total": 7
+      },
+      "camas_instaladas": 7,
+      "categoria": 3,
+      "estandares": {
+        "habitaciones": "PARCIAL",
+        "wifi": "PARCIAL",
+        "climatizacion": "PARCIAL",
+        "alimentacion": "PARCIAL",
+        "lavanderia": "NO"
+      },
+      "contratos": [],
+      "precios": {
+        "simple_privado": 0,
+        "simple_compartido": 0,
+        "doble_privado": 0,
+        "doble_compartido": 0,
+        "triple_privado": 0,
+        "triple_compartido": 0
+      },
+      "fecha_actualizacion": "2026-04-06"
+    }
+  ],
+  "metadata": {
+    "version": "3.0",
+    "ultima_actualizacion": "2026-04-06",
+    "total_hospedajes": 57,
+    "fuente": "Base_de_datos_ordenada.xlsx"
+  }
+}
