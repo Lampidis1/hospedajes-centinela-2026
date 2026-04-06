@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Hospedajes Centinela 2026</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --teal: #00A399;
+            --teal-dk: #006973;
+            --teal-lt: #E4F6F5;
+            --gold: #F2A900;
+            --dark: #1C2632;
+            --gray: #5F6973;
+            --gray-lt: #D7DEE4;
+            --white: #FFFFFF;
+            --bg: #F4F7F8;
+            --red: #D0311B;
+            
+            --font-display: 'Barlow Condensed', sans-serif;
+            --font-body: 'Barlow', sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--dark);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: var(--white);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-left h1 {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: var(--teal-dk);
+            letter-spacing: -0.5px;
+        }
+        
+        .header-left p {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-top: 0.25rem;
+        }
+        
+        .header-actions {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: var(--teal);
+            color: white;
+            border: none;
+            padding: 0.65rem 1.25rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn:hover {
+            background: var(--teal-dk);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,163,153,0.3);
+        }
+        
+        .btn-gold { background: var(--gold); }
+        .btn-gold:hover { background: #D89400; }
+        .btn-red { background: var(--red); }
+        .btn-sm { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+        
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 4px solid var(--teal);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .stat-card.gold { border-left-color: var(--gold); }
+        .stat-card.red { border-left-color: var(--red); }
+        .stat-card.clickable:hover { background: var(--teal-lt); }
+        
+        .stat-label {
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 0.4rem;
+        }
+        
+        .stat-value {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--teal-dk);
+            line-height: 1;
+        }
+        
+        .stat-subtext {
+            font-size: 0.75rem;
+            color: var(--gray);
+            margin-top: 0.4rem;
+        }
+        
+        .hospedajes-container {
+            padding: 1.5rem 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .hospedajes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        
+        .hospedaje-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .hospedaje-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, var(--teal), var(--teal-dk));
+            color: white;
+            padding: 1rem;
+            position: relative;
+        }
+        
+        .card-header h3 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            padding-right: 60px;
+        }
+        
+        .card-header .address {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+        
+        .rating {
+            position: absolute;
+            top: 0.8rem;
+            right: 0.8rem;
+            font-size: 1rem;
+        }
+        
+        .availability-badge {
+            position: absolute;
+            top: 0.8rem;
+            left: 0.8rem;
+            background: rgba(255,255,255,0.95);
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--teal-dk);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.1rem;
+        }
+        
+        .availability-badge .label {
+            font-size: 0.65rem;
+            opacity: 0.8;
+        }
+        
+        .availability-badge .value {
+            font-size: 1.1rem;
+        }
+        
+        .card-body {
+            padding: 1rem;
+        }
+        
+        .card-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-label {
+            font-size: 0.7rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.2rem;
+        }
+        
+        .info-value {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+        
+        .card-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.8rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid var(--gray-lt);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.1rem;
+            color: var(--gray);
+        }
+        
+        .error {
+            background: #FFEBEE;
+            border-left: 4px solid var(--red);
+            padding: 1.5rem;
+            margin: 2rem;
+            border-radius: 8px;
+        }
+        
+        .error h3 {
+            color: var(--red);
+            margin-bottom: 0.5rem;
+        }
+        
+        .filters {
+            background: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+        
+        .filter-group label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gray);
+            text-transform: uppercase;
+        }
+        
+        .filter-group input,
+        .filter-group select {
+            padding: 0.6rem 0.8rem;
+            border: 2px solid var(--gray-lt);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            min-width: 180px;
+        }
+        
+        @media (max-width: 1200px) {
+            .hospedajes-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header, .filters, .dashboard, .hospedajes-container {
+                padding: 1rem;
+            }
+            
+            .dashboard {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hospedajes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <h1>SISTEMA DE HOSPEDAJES CENTINELA 2026</h1>
+            <p>Gestión Integral - Sierra Gorda</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-gold btn-sm" onclick="window.open('https://wa.me/', '_blank')">
+                📱 WhatsApp
+            </button>
+            <button class="btn btn-sm" onclick="location.reload()">
+                🔄 Recargar
+            </button>
+        </div>
+    </div>
+    
+    <div class="dashboard">
+        <div class="stat-card">
+            <div class="stat-label">Total Habitaciones</div>
+            <div class="stat-value" id="totalHabitaciones">--</div>
+            <div class="stat-subtext">Reportadas en sistema</div>
+        </div>
+        
+        <div class="stat-card gold">
+            <div class="stat-label">EECC Centinela</div>
+            <div class="stat-value" id="habitacionesEECC">--</div>
+            <div class="stat-subtext">Habitaciones utilizadas</div>
+        </div>
+        
+        <div class="stat-card red">
+            <div class="stat-label">Otras Empresas</div>
+            <div class="stat-value" id="habitacionesOtras">--</div>
+            <div class="stat-subtext">Habitaciones utilizadas</div>
+        </div>
+        
+        <div class="stat-card clickable">
+            <div class="stat-label">Disponibles Hoy</div>
+            <div class="stat-value" id="habitacionesDisponibles">--</div>
+            <div class="stat-subtext">Click para filtrar</div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-label">Total Hospedajes</div>
+            <div class="stat-value" id="totalHospedajes">--</div>
+            <div class="stat-subtext">Activos</div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-label">Tasa Ocupación</div>
+            <div class="stat-value" id="tasaOcupacion">--</div>
+            <div class="stat-subtext">Promedio</div>
+        </div>
+    </div>
+    
+    <div class="filters">
+        <div class="filter-group">
+            <label>Buscar</label>
+            <input type="text" id="searchInput" placeholder="Nombre, dirección..." oninput="aplicarFiltros()">
+        </div>
+        
+        <div class="filter-group">
+            <label>Categoría</label>
+            <select id="categoriaFilter" onchange="aplicarFiltros()">
+                <option value="">Todas</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
+            <label>Disponibilidad</label>
+            <select id="disponibilidadFilter" onchange="aplicarFiltros()">
+                <option value="">Todas</option>
+                <option value="disponible">Con disponibles</option>
+                <option value="completo">Completo</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="hospedajes-container">
+        <div id="hospedajesGrid" class="hospedajes-grid">
+            <div class="loading">⏳ Cargando hospedajes...</div>
+        </div>
+    </div>
+    
+    <script>
+        let hospedajesData = [];
+        let hospedajesFiltrados = [];
+        
+        // Rutas posibles para el JSON
+        const JSON_PATHS = [
+            'data/hospedajes.json',
+            'hospedajes.json',
+            'data/hospedajes_v3.json',
+            'hospedajes_v3.json',
+            '../data/hospedajes.json',
+            './data/hospedajes.json',
+            'https://raw.githubusercontent.com/Lampidis1/hospedajes-centinela-2026/main/data/hospedajes.json'
+        ];
+        
+        async function cargarDatos() {
+            console.log('🔍 Iniciando carga de datos...');
+            
+            for (const path of JSON_PATHS) {
+                try {
+                    console.log(`Intentando cargar: ${path}`);
+                    const response = await fetch(path);
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        console.log('✅ JSON cargado exitosamente desde:', path);
+                        console.log('📊 Datos recibidos:', data);
+                        procesarDatos(data);
+                        return;
+                    }
+                } catch (error) {
+                    console.log(`❌ Error con ${path}:`, error.message);
+                    continue;
+                }
+            }
+            
+            // Si ninguna ruta funcionó
+            mostrarError();
+        }
+        
+        function procesarDatos(data) {
+            hospedajesData = data.hospedajes || [];
+            hospedajesFiltrados = [...hospedajesData];
+            
+            console.log(`✅ ${hospedajesData.length} hospedajes cargados`);
+            
+            actualizarDashboard();
+            renderizarHospedajes();
+        }
+        
+        function actualizarDashboard() {
+            const totalHab = hospedajesData.reduce((sum, h) => 
+                sum + (h.habitaciones?.total || 0), 0);
+            
+            const habEECC = hospedajesData.reduce((sum, h) => {
+                const contratos = h.contratos || [];
+                return sum + contratos
+                    .filter(c => c.tipo_cliente === 'EECC_CEN')
+                    .reduce((s, c) => s + (c.habitaciones_usadas || 0), 0);
+            }, 0);
+            
+            const habOtras = hospedajesData.reduce((sum, h) => {
+                const contratos = h.contratos || [];
+                return sum + contratos
+                    .filter(c => c.tipo_cliente !== 'EECC_CEN')
+                    .reduce((s, c) => s + (c.habitaciones_usadas || 0), 0);
+            }, 0);
+            
+            const habDisponibles = totalHab - habEECC - habOtras;
+            const tasaOcup = totalHab > 0 ? Math.round(((habEECC + habOtras) / totalHab) * 100) : 0;
+            
+            document.getElementById('totalHabitaciones').textContent = totalHab;
+            document.getElementById('habitacionesEECC').textContent = habEECC;
+            document.getElementById('habitacionesOtras').textContent = habOtras;
+            document.getElementById('habitacionesDisponibles').textContent = habDisponibles;
+            document.getElementById('totalHospedajes').textContent = hospedajesData.length;
+            document.getElementById('tasaOcupacion').textContent = tasaOcup + '%';
+        }
+        
+        function renderizarHospedajes() {
+            const grid = document.getElementById('hospedajesGrid');
+            
+            if (hospedajesFiltrados.length === 0) {
+                grid.innerHTML = '<div class="loading">No se encontraron resultados</div>';
+                return;
+            }
+            
+            grid.innerHTML = hospedajesFiltrados.map(h => {
+                const totalHab = h.habitaciones?.total || 0;
+                const usadas = calcularHabitacionesUsadas(h);
+                const disponibles = totalHab - usadas;
+                
+                return `
+                    <div class="hospedaje-card">
+                        <div class="card-header">
+                            <div class="availability-badge">
+                                <div class="label">DISPONIBLES</div>
+                                <div class="value">${disponibles}/${totalHab}</div>
+                            </div>
+                            <div class="rating">${'⭐'.repeat(h.categoria || 0)}</div>
+                            <h3>${h.nombre || 'Sin nombre'}</h3>
+                            <div class="address">${h.direccion || h.localidad || 'Sierra Gorda'}</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">
+                                <div class="info-item">
+                                    <div class="info-label">Camas</div>
+                                    <div class="info-value">${h.camas_instaladas || 0}</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">Encargado</div>
+                                    <div class="info-value" style="font-size: 0.8rem;">${(h.encargado || 'N/A').substring(0, 15)}</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">Teléfono</div>
+                                    <div class="info-value" style="font-size: 0.8rem;">${(h.telefono || 'N/A').substring(0, 12)}</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">Email</div>
+                                    <div class="info-value" style="font-size: 0.75rem;">${(h.email || 'N/A').substring(0, 20)}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function calcularHabitacionesUsadas(hospedaje) {
+            const contratos = hospedaje.contratos || [];
+            return contratos.reduce((sum, c) => sum + (c.habitaciones_usadas || 0), 0);
+        }
+        
+        function aplicarFiltros() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const categoria = document.getElementById('categoriaFilter').value;
+            const disponibilidad = document.getElementById('disponibilidadFilter').value;
+            
+            hospedajesFiltrados = hospedajesData.filter(h => {
+                const matchSearch = !search || 
+                    (h.nombre || '').toLowerCase().includes(search) ||
+                    (h.direccion || '').toLowerCase().includes(search) ||
+                    (h.encargado || '').toLowerCase().includes(search);
+                
+                const matchCategoria = !categoria || h.categoria == categoria;
+                
+                const totalHab = h.habitaciones?.total || 0;
+                const usadas = calcularHabitacionesUsadas(h);
+                const disponibles = totalHab - usadas;
+                
+                const matchDisponibilidad = !disponibilidad ||
+                    (disponibilidad === 'disponible' && disponibles > 0) ||
+                    (disponibilidad === 'completo' && disponibles === 0);
+                
+                return matchSearch && matchCategoria && matchDisponibilidad;
+            });
+            
+            renderizarHospedajes();
+        }
+        
+        function mostrarError() {
+            console.error('❌ No se pudo cargar el JSON desde ninguna ruta');
+            document.getElementById('hospedajesGrid').innerHTML = `
+                <div class="error">
+                    <h3>⚠️ Error al Cargar Datos</h3>
+                    <p><strong>No se pudo encontrar el archivo de datos.</strong></p>
+                    <p>Rutas intentadas:</p>
+                    <ul>
+                        ${JSON_PATHS.map(p => `<li><code>${p}</code></li>`).join('')}
+                    </ul>
+                    <br>
+                    <p><strong>Soluciones:</strong></p>
+                    <ol>
+                        <li>Verifica que <code>data/hospedajes.json</code> exista en tu repositorio</li>
+                        <li>Revisa la consola del navegador (F12) para más detalles</li>
+                        <li>Si estás en GitHub Pages, espera 2-3 minutos después de hacer push</li>
+                    </ol>
+                    <br>
+                    <button class="btn" onclick="location.reload()">🔄 Reintentar</button>
+                </div>
+            `;
+        }
+        
+        // Iniciar carga
+        cargarDatos();
+    </script>
+</body>
+</html>
