@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de Hospedajes - Centinela 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --teal: #00A399;
+            --teal-dark: #006973;
+            --teal-light: #E4F6F5;
+            --gold: #F2A900;
+            --dark: #1C2632;
+            --gray: #5F6973;
+            --gray-light: #D7DEE4;
+            --white: #FFFFFF;
+            --danger: #D0311B;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f1f5 100%);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 105, 115, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Controls */
+        .controls {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr auto;
+            gap: 1rem;
+            align-items: flex-end;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .control-group label {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .control-group input,
+        .control-group select {
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--gray-light);
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .control-group input:focus,
+        .control-group select:focus {
+            outline: none;
+            border-color: var(--teal);
+            box-shadow: 0 0 0 3px rgba(0, 163, 153, 0.1);
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            background: var(--teal);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        button:hover {
+            background: var(--teal-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 163, 153, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid var(--teal);
+        }
+
+        .stat-card h3 {
+            color: var(--gray);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-card .value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--teal-dark);
+            font-weight: 700;
+        }
+
+        /* Grid de hospedajes */
+        .hospedajes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Tarjeta de hospedaje */
+        .hospedaje-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: pointer;
+            border-top: 4px solid var(--teal-light);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .hospedaje-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 163, 153, 0.15);
+            border-top-color: var(--teal);
+        }
+
+        .hospedaje-header {
+            background: linear-gradient(135deg, var(--teal-light) 0%, rgba(0, 163, 153, 0.08) 100%);
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--teal-light);
+            flex-shrink: 0;
+        }
+
+        .hospedaje-stars {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .hospedaje-nombre {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hospedaje-categoria {
+            display: inline-block;
+            background: var(--teal);
+            color: white;
+            padding: 0.35rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hospedaje-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .info-label {
+            color: var(--gray);
+            font-weight: 600;
+            min-width: 80px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .camas-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--teal-light);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .camas-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--teal) 0%, var(--gold) 100%);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .hospedaje-footer {
+            padding: 1rem 1.5rem;
+            background: var(--teal-light);
+            border-top: 1px solid rgba(0, 163, 153, 0.2);
+            display: flex;
+            gap: 0.5rem;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .btn-ver-ficha {
+            flex-grow: 1;
+            background: var(--teal);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-ver-ficha:hover {
+            background: var(--teal-dark);
+        }
+
+        .status-badge {
+            padding: 0.35rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-cumple {
+            background: #C8E6C9;
+            color: #2E7D32;
+        }
+
+        .status-parcial {
+            background: #FFF9C4;
+            color: #F57F17;
+        }
+
+        .status-no {
+            background: #FFCDD2;
+            color: #C62828;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
+            color: white;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .modal-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-btn:hover {
+            opacity: 0.8;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--teal-dark);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--teal-light);
+            padding-bottom: 0.5rem;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .detail-item {
+            padding: 1rem;
+            background: var(--teal-light);
+            border-radius: 8px;
+        }
+
+        .detail-label {
+            color: var(--gray);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.3rem;
+        }
+
+        .detail-value {
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .checkbox-item input {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--teal);
+        }
+
+        .checkbox-item label {
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--gray);
+        }
+
+        .empty-state h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .controls {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hospedajes-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .controls {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hospedajes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏨 Directorio Hospedajes</h1>
+        <p>Programa Centinela 2026 - Sierra Gorda</p>
+    </header>
+
+    <div class="container">
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Hospedajes</h3>
+                <div class="value" id="total-hospedajes">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Camas Disponibles</h3>
+                <div class="value" id="total-camas">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>% Ocupación Prom.</h3>
+                <div class="value" id="ocupacion-prom">0%</div>
+            </div>
+            <div class="stat-card">
+                <h3>Al Día Pagos</h3>
+                <div class="value" id="al-dia-pagos">0</div>
+            </div>
+        </div>
+
+        <!-- Controles de búsqueda y filtro -->
+        <div class="controls">
+            <div class="control-group">
+                <label for="buscar">Buscar hospedaje</label>
+                <input type="text" id="buscar" placeholder="Nombre, dirección, encargado...">
+            </div>
+
+            <div class="control-group">
+                <label for="filtro-categoria">Categoría</label>
+                <select id="filtro-categoria">
+                    <option value="">Todas las categorías</option>
+                    <option value="5">⭐⭐⭐⭐⭐ Premium</option>
+                    <option value="4">⭐⭐⭐⭐ Muy Bueno</option>
+                    <option value="3">⭐⭐⭐ Bueno</option>
+                    <option value="2">⭐⭐ Aceptable</option>
+                    <option value="1">⭐ Básico</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="filtro-estatus">Estado Cumplimiento</label>
+                <select id="filtro-estatus">
+                    <option value="">Todos</option>
+                    <option value="Cumple Estándar">✓ Cumple Estándar</option>
+                    <option value="Parcialmente Cumple">⚠ Parcialmente Cumple</option>
+                    <option value="No Cumple">✗ No Cumple</option>
+                </select>
+            </div>
+
+            <button onclick="aplicarFiltros()">🔍 Filtrar</button>
+        </div>
+
+        <!-- Grid de hospedajes -->
+        <div class="hospedajes-grid" id="hospedajes-container"></div>
+
+        <!-- Empty state -->
+        <div class="empty-state" id="empty-state" style="display: none;">
+            <h3>No hay hospedajes que cumplan los criterios</h3>
+            <p>Intenta ajustar los filtros de búsqueda</p>
+        </div>
+    </div>
+
+    <!-- Modal de ficha detallada -->
+    <div class="modal" id="modal-ficha">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 id="ficha-nombre"></h2>
+                    <p id="ficha-categoria-badge" style="margin-top: 0.5rem;"></p>
+                </div>
+                <button class="close-btn" onclick="cerrarModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="ficha-body"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Antofagasta Minerals - Centinela. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Datos de ejemplo - REEMPLAZAR CON API/DATABASE
+        const hospedajesData = [
+            {
+                id: 1,
+                nombre: "Aris Alojamiento",
+                direccion: "Colón #34",
+                localidad: "Sierra Gorda",
+                encargado: "Juan Pérez",
+                telefono: "+56962447427",
+                email: "aris@email.com",
+                camas_instaladas: 12,
+                camas_disponibles: 3,
+                categoria: 4,
+                rating: 4,
+                servicios: ["WiFi", "TV", "AC", "Desayuno"],
+                estado: "Parcialmente Cumple",
+                estandares: {
+                    habitaciones: "SI",
+                    wifi: "SI",
+                    climatizacion: "SI",
+                    alimentacion: "SI",
+                    lavanderia: "NO"
+                },
+                al_dia_pagos: true,
+                proxima_fecha_pago: "30/04/2026",
+                empresas_alojadas: ["Centinela"]
+            },
+            {
+                id: 2,
+                nombre: "Campamento Melipal",
+                direccion: "Colón #50",
+                localidad: "Sierra Gorda",
+                encargado: "María López",
+                telefono: "+564990791729",
+                email: "melipal@email.com",
+                camas_instaladas: 314,
+                camas_disponibles: 45,
+                categoria: 5,
+                rating: 5,
+                servicios: ["WiFi", "TV", "AC", "Desayuno", "Cena", "Lavandería"],
+                estado: "Cumple Estándar",
+                estandares: {
+                    habitaciones: "SI",
+                    wifi: "SI",
+                    climatizacion: "SI",
+                    alimentacion: "SI",
+                    lavanderia: "SI"
+                },
+                al_dia_pagos: true,
+                proxima_fecha_pago: "15/04/2026",
+                empresas_alojadas: ["Centinela", "Contratista A"]
+            },
+            {
+                id: 3,
+                nombre: "Casa Claudio Roca 2",
+                direccion: "Av. Jaime Guzmán #107",
+                localidad: "Sierra Gorda",
+                encargado: "Pendiente",
+                telefono: "PENDIENTE",
+                email: "-",
+                camas_instaladas: 0,
+                camas_disponibles: 0,
+                categoria: 0,
+                rating: 0,
+                servicios: [],
+                estado: "No Verificado",
+                estandares: {},
+                al_dia_pagos: false,
+                proxima_fecha_pago: "-",
+                empresas_alojadas: []
+            },
+            {
+                id: 4,
+                nombre: "Casa Alberto Briones",
+                direccion: "Santa María #100",
+                localidad: "Sierra Gorda",
+                encargado: "Carlos Briones",
+                telefono: "+56983589817",
+                email: "briones@email.com",
+                camas_instaladas: 3,
+                camas_disponibles: 1,
+                categoria: 3,
+                rating: 3,
+                servicios: ["WiFi", "Desayuno"],
+                estado: "No Cumple",
+                estandares: {
+                    habitaciones: "PARCIAL",
+                    wifi: "SI",
+                    climatizacion: "NO",
+                    alimentacion: "SI",
+                    lavanderia: "NO"
+                },
+                al_dia_pagos: true,
+                proxima_fecha_pago: "25/04/2026",
+                empresas_alojadas: []
+            },
+            {
+                id: 5,
+                nombre: "Hospedaje Maricela",
+                direccion: "Av Salvador Allende",
+                localidad: "Sierra Gorda",
+                encargado: "Maricela Soto",
+                telefono: "+56931275780",
+                email: "maricela@email.com",
+                camas_instaladas: 9,
+                camas_disponibles: 2,
+                categoria: 4,
+                rating: 4,
+                servicios: ["WiFi", "TV", "AC", "Desayuno", "Cena"],
+                estado: "Parcialmente Cumple",
+                estandares: {
+                    habitaciones: "SI",
+                    wifi: "SI",
+                    climatizacion: "SI",
+                    alimentacion: "SI",
+                    lavanderia: "NO"
+                },
+                al_dia_pagos: true,
+                proxima_fecha_pago: "10/05/2026",
+                empresas_alojadas: ["Centinela"]
+            }
+        ];
+
+        let hospedajesFiltrados = [...hospedajesData];
+
+        // Renderizar hospedajes
+        function renderizarHospedajes() {
+            const container = document.getElementById('hospedajes-container');
+            const emptyState = document.getElementById('empty-state');
+
+            if (hospedajesFiltrados.length === 0) {
+                container.innerHTML = '';
+                emptyState.style.display = 'block';
+                return;
+            }
+
+            emptyState.style.display = 'none';
+            container.innerHTML = hospedajesFiltrados.map(h => `
+                <div class="hospedaje-card">
+                    <div class="hospedaje-header">
+                        <div class="hospedaje-stars">${'⭐'.repeat(h.categoria) || '—'}</div>
+                        <div class="hospedaje-nombre">${h.nombre}</div>
+                        <span class="hospedaje-categoria">${getCategoriaLabel(h.categoria)}</span>
+                    </div>
+                    <div class="hospedaje-body">
+                        <div class="info-row">
+                            <span class="info-label">📍 Ubicación</span>
+                            <span class="info-value">${h.direccion}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">👤 Encargado</span>
+                            <span class="info-value">${h.encargado}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">🛏️ Camas</span>
+                            <span class="info-value">${h.camas_disponibles}/${h.camas_instaladas} disponibles</span>
+                        </div>
+                        <div class="camas-bar">
+                            <div class="camas-fill" style="width: ${(h.camas_disponibles / h.camas_instaladas) * 100}%"></div>
+                        </div>
+                    </div>
+                    <div class="hospedaje-footer">
+                        <button class="btn-ver-ficha" onclick="abrirModal(${h.id})">Ver Ficha</button>
+                        <span class="status-badge ${getStatusClass(h.estado)}">${h.estado.split(' ')[0]}</span>
+                    </div>
+                </div>
+            `).join('');
+
+            actualizarStats();
+        }
+
+        function getCategoriaLabel(cat) {
+            const labels = {
+                5: 'Premium',
+                4: 'Muy Bueno',
+                3: 'Bueno',
+                2: 'Aceptable',
+                1: 'Básico',
+                0: 'No verificado'
+            };
+            return labels[cat] || 'Desconocido';
+        }
+
+        function getStatusClass(estado) {
+            if (estado === 'Cumple Estándar') return 'status-cumple';
+            if (estado === 'Parcialmente Cumple') return 'status-parcial';
+            return 'status-no';
+        }
+
+        // Filtros
+        function aplicarFiltros() {
+            const buscar = document.getElementById('buscar').value.toLowerCase();
+            const categoria = document.getElementById('filtro-categoria').value;
+            const estatus = document.getElementById('filtro-estatus').value;
+
+            hospedajesFiltrados = hospedajesData.filter(h => {
+                const cumpleBuscar = !buscar || 
+                    h.nombre.toLowerCase().includes(buscar) ||
+                    h.direccion.toLowerCase().includes(buscar) ||
+                    h.encargado.toLowerCase().includes(buscar);
+
+                const cumpleCategoria = !categoria || h.categoria.toString() === categoria;
+                const cumpleEstatus = !estatus || h.estado === estatus;
+
+                return cumpleBuscar && cumpleCategoria && cumpleEstatus;
+            });
+
+            renderizarHospedajes();
+        }
+
+        // Modal
+        function abrirModal(id) {
+            const hospedaje = hospedajesData.find(h => h.id === id);
+            if (!hospedaje) return;
+
+            const modal = document.getElementById('modal-ficha');
+            document.getElementById('ficha-nombre').textContent = hospedaje.nombre;
+            document.getElementById('ficha-categoria-badge').innerHTML = 
+                `<span class="hospedaje-categoria">${getCategoriaLabel(hospedaje.categoria)}</span>`;
+
+            const body = document.getElementById('ficha-body');
+            body.innerHTML = `
+                <div class="section">
+                    <div class="section-title">Información General</div>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <div class="detail-label">Dirección</div>
+                            <div class="detail-value">${hospedaje.direccion}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Localidad</div>
+                            <div class="detail-value">${hospedaje.localidad}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Encargado</div>
+                            <div class="detail-value">${hospedaje.encargado}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Teléfono</div>
+                            <div class="detail-value">${hospedaje.telefono}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Email</div>
+                            <div class="detail-value">${hospedaje.email}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Rating</div>
+                            <div class="detail-value">${'⭐'.repeat(hospedaje.rating)}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Capacidad</div>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <div class="detail-label">Camas Instaladas</div>
+                            <div class="detail-value">${hospedaje.camas_instaladas}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Disponibles HOY</div>
+                            <div class="detail-value">${hospedaje.camas_disponibles}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Servicios Ofrecidos</div>
+                    <div class="checkbox-group">
+                        ${hospedaje.servicios.map(s => `
+                            <div class="checkbox-item">
+                                <input type="checkbox" checked disabled>
+                                <label>${s}</label>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Cumplimiento Estándares Centinela</div>
+                    <div class="checkbox-group">
+                        ${Object.entries(hospedaje.estandares).map(([key, val]) => `
+                            <div class="checkbox-item">
+                                <span>${getEstandarLabel(key)}: ${val}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Información de Pagos</div>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <div class="detail-label">Al Día</div>
+                            <div class="detail-value">${hospedaje.al_dia_pagos ? '✓ Sí' : '✗ No'}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Próxima Fecha</div>
+                            <div class="detail-value">${hospedaje.proxima_fecha_pago}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Empresas Alojadas</div>
+                    <div style="color: ${hospedaje.empresas_alojadas.length > 0 ? 'var(--dark)' : 'var(--gray)'};">
+                        ${hospedaje.empresas_alojadas.length > 0 ? hospedaje.empresas_alojadas.join(', ') : 'Ninguna'}
+                    </div>
+                </div>
+            `;
+
+            modal.classList.add('active');
+        }
+
+        function cerrarModal() {
+            document.getElementById('modal-ficha').classList.remove('active');
+        }
+
+        function getEstandarLabel(key) {
+            const labels = {
+                habitaciones: 'Habitaciones (Max 2 + Baño privado)',
+                wifi: 'WiFi de buena señal',
+                climatizacion: 'Climatización/AC',
+                alimentacion: 'Desayuno/Cena/Colaciones',
+                lavanderia: 'Lavandería'
+            };
+            return labels[key] || key;
+        }
+
+        // Stats
+        function actualizarStats() {
+            document.getElementById('total-hospedajes').textContent = hospedajesFiltrados.length;
+            
+            const totalCamas = hospedajesFiltrados.reduce((sum, h) => sum + h.camas_disponibles, 0);
+            document.getElementById('total-camas').textContent = totalCamas;
+
+            const ocupacion = hospedajesFiltrados.filter(h => h.camas_instaladas > 0)
+                .reduce((sum, h) => sum + ((h.camas_instaladas - h.camas_disponibles) / h.camas_instaladas * 100), 0) 
+                / hospedajesFiltrados.filter(h => h.camas_instaladas > 0).length || 0;
+            document.getElementById('ocupacion-prom').textContent = Math.round(ocupacion) + '%';
+
+            const alDiaPagos = hospedajesFiltrados.filter(h => h.al_dia_pagos).length;
+            document.getElementById('al-dia-pagos').textContent = alDiaPagos;
+        }
+
+        // Event listeners
+        document.getElementById('buscar').addEventListener('keyup', aplicarFiltros);
+        document.getElementById('filtro-categoria').addEventListener('change', aplicarFiltros);
+        document.getElementById('filtro-estatus').addEventListener('change', aplicarFiltros);
+        document.getElementById('modal-ficha').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('modal-ficha')) {
+                cerrarModal();
+            }
+        });
+
+        // Inicializar
+        renderizarHospedajes();
+    </script>
+</body>
+</html>
